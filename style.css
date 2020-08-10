@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    /* position: sticky;
+    top: 0; */
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    display: flex;
+    border-radius: 9px;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+.logo{
+    filter: drop-shadow(6px 5px 2px rgb(255, 102, 0));
+    padding-left: 2rem;
+    cursor: pointer;
+}
+.logo img{
+    width: 9em;
+}
+.nav-links{
+    /* background: burlywood; */
+}
+.nav-links ul{
+    /* background: chartreuse; */
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.nav-links ul li a{
+    font-size: 1.3rem;
+    display: flex;
+    font-weight: 600;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: .6rem 2.5rem;
+    border-radius: 5px;
+    transition: .5s;
+}
+.nav-links ul li a:hover{
+    box-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+
+.heading{
+    /* background-color: pink; */
+    flex-basis: 80%;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.main-heading{
+    font-size: 4.5rem;
+    border-bottom: 4px solid rgb(112, 17, 175);
+    font-weight: 600;
+    font-family: 'Merienda One', cursive;
+    text-decoration: underline;
+    background: -webkit-linear-gradient(rgba(230, 255, 4, 0.74),rgba(255, 0, 221, 0.753));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main{
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    height: 100%;
+    margin: 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label{
+    /* background: beige; */
+    height: 100%;
+    flex: 2;
+    text-align: center;
+    margin: 50px;
+}    
+.intro{
+    padding: 10px;
+    font-size: 4rem; 
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
+    color: rgb(0, 109, 252);
+    /* filter: drop-shadow(2px 2px 4px rgb(9, 150, 245)); */
+}
+
+
+.label>h4{
+    margin: 40px;
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: 600;
+    color: rgb(255, 104, 4);
+    /* filter: drop-shadow(2px 2px 4px rgb(245, 9, 9));  */
+}
+.my-image-section{
+    /* background: chartreuse; */
+    height: 80%;
+    /* flex: 1; */
+}
+.my-image{
+    border-radius: 80px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(3px 20px 20px rgb(131, 124, 117));
+
+}
+#about-me{
+    margin: 100px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-me-image>img{
+    /* background: chocolate; */
+    height: 14rem;
+    border-radius: 10px;
+    width: 9.5rem;
+}
+.about-me-text{
+    /* background: cornflowerblue; */
+    flex: 1;
+    margin: 20px 110px;
+}
+.heading-about-me{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+
+
+}
+.content-about-me{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+#contact-me{
+    /* background-color: cornflowerblue; */
+    margin: 100px 10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-me-image>img{
+    /* background-color: hotpink; */
+    height: 14rem;
+    width: 9.5rem;
+    border-radius: 10px;
+}
+.contact-me-text{
+    flex: 1;
+    margin: 20px 90px;
+}
+.contact-me-heading{
+    /* background-color: darkblue; */
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;  
+}
+.contact-me-text>p{
+    /* background-color: hotpink; */
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500; 
+}
+
+.icons{
+    /* background-color: darkgrey; */
+    /* margin-left: 20px;
+    margin-top: 25px; */
+}
+.icons > a{
+    filter: drop-shadow(10px 5px 10px rgb(0, 255, 157));
+    /* box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow; */
+}
+.icons > a:hover{
+    filter: drop-shadow(10px 5px 10px rgb(9, 15, 13));
+}
+.icon-image{
+    margin: 1rem;
+}
+#Feedback{
+    margin: 100px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedback-image>img{
+    height: 14rem;
+    border-radius: 10px;
+    width: 9.5rem;
+
+}
+.feedback-text{
+    flex: 1;
+    margin: 20px 60px;
+
+}
+.heading-Feedback{
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline; 
+}
+.feedback-text>p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;   
+}
+.link{
+    
+    text-align: center;
+    margin: 40px;
+    
+}
+.feedback-form-link:hover{
+    box-shadow: 2px 2px 10px rgb(32, 208, 91);
+}
+.feedback-form-link{  
+    background-color: rgb(32, 208, 91);
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    justify-content: center;
+    display: flex;
+    background-color: rgb(70, 37, 189);
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin: 1rem 2rem;
+}
+.footer-content{
+    display: flex;
+    padding: 4rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 3px solid rgb(245, 245, 245);
+}
+.credit-section{
+    /* background-color: coral; */
+}
+
+.credit-heading h3{
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.credit-list{
+    margin-top: 2rem;
+}
+.credit-list li{
+    padding-top: 2rem;
+    list-style-type: none;
+}
+.credit-list a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(121, 241, 221);
+    text-decoration: underline;
+}
+.copyright-section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.copyright-section h3{
+    /* background-color: cornflowerblue; */
+    font-size: .9em;
+    font-weight: 200;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu-section{
+    /* background-color: cornsilk; */
+}
+.menu-list{
+    margin-top: 2rem;
+    /* flex-shrink: 9; */
+}
+.menu-heading h3{
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.menu-list li{
+    padding-top: 2rem;
+    list-style-type: none;
+
+}
+.menu-list a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(121, 241, 221);
+    text-decoration: underline;
+}
+.good-bye-message{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 10px;
+}
+.good-bye-message h1{
+    font-size: 4rem;
+    /* color: rgb(179, 247, 123); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+#toggle,label{
+    display: none;
+}
+@media (max-width:1400px){
+    .nav-links ul{
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: flex;
+    }
+    label{
+        display: inline-block;
+        background: rgb(94, 85, 76);
+        margin: 20px;
+        border-radius: 7px;
+    }
+
+}
+
+@media (max-width:920px){
+    .my-image-section{
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label{
+        order: 2;
+    }
+    #about-me{
+        order: 3;
+    }
+    #contact-me{
+        order: 4;
+    }
+    #Feedback{
+        order: 5;
+    }
+    .icon-image{
+        width: 4rem;
+        margin: .2rem;
+    }
+    
+}
+@media (max-width:735px){
+    header,footer,main{
+        width: 34rem;
+    }
+    .icon-image{
+        width: 5rem;
+    }
+}
